@@ -1,9 +1,10 @@
+import ast
 import random
 import socket
 import threading
 import time
 from tkinter import *
-
+import json
 
 class Server:
 
@@ -36,7 +37,7 @@ class Server:
 
             if len(self.clients) == self.maxPlayer:
                 time.sleep(2)
-                self.game.newGame(self.alleNamen)   # Alle Spieler sind da ,Spiel startet
+                self.game.newGame(self.alleNamen)  # Alle Spieler sind da ,Spiel startet
 
     def receivingFromClient(self, client):
 
@@ -102,15 +103,24 @@ class Spieler(Client):
 
 class Master:
 
+
     def __init__(self):
         self.main = Tk()
         self.main.title("Monopoly")
         self.main.geometry("700x700")
         self.main.resizable(0, 0)
 
-        self.bg_image = PhotoImage(file="board.png")
+        with open("propData.json", "r") as f:
+            dataStr = "".join([x for x in f.readlines()])
+        self.propData = json.loads(dataStr)
+        for i in self.propData:
+            i["PhotoImage"] = PhotoImage(file=i["image"])
+
+        self.bg_image = PhotoImage(file="img/board.png")
         self.bg_label = Label(self.main, image=self.bg_image)
         self.bg_label.place(x=0, y=0, relheight=1, relwidth=1)
+
+        self.showPropCard(random.randint(0,40))
 
     def newGame(self, spieler):
         self.alleSpielerNamen = [x for x in spieler]
@@ -124,6 +134,16 @@ class Master:
             self.alleSpielerObjekte[name] = Spieler(name)  # Für jeden Spieler wird ein neues
             # SPIELER Objekt angelegt und in einem dictionary gespeichert
 
+    def showPropCard(self, pos):
+
+        tl = Toplevel()
+        tl.geometry("250x300")
+        tl.resizable(0,0)
+
+        tlCard = Label(tl, image = self.propData[pos]["PhotoImage"])
+        tlCard.place(x = 0, y = 0, relheight = 1, relwidth = 1)
+
+        tl.mainloop()
 
 class Launcher:
 
@@ -181,4 +201,7 @@ class Launcher:
 
 
 if __name__ == "__main__":
+
+
+
     l = Launcher()
