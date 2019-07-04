@@ -1,40 +1,338 @@
-[{"id": 0, "x": 669, "y": 671, "name" : "LOS", "image": "test.png"},
-{"id": 1, "x": 579, "y": 671, "name" : "Mediterranean Ave.", "image": "img/prop_cards/1_mediterranean_ave.png"},
-{"id": 2, "x": 522, "y": 671, "name" : "LOS", "image": "test.png"},
-{"id": 3, "x": 465, "y": 671, "name" : "Baltic Ave.", "image": "img/prop_cards/3_baltic_ave.png"},
-{"id": 4, "x": 406, "y": 671, "name" : "LOS", "image": "test.png"},
-{"id": 5, "x": 350, "y": 671, "name" : "Reading R. R.", "image": "img/prop_cards/5_reading_r_r.png"},
-{"id": 6, "x": 293, "y": 671, "name" : "Oriental Ave.", "image": "img/prop_cards/6_oriental_ave.png"},
-{"id": 7, "x": 236, "y": 671, "name" : "LOS", "image": "test.png"},
-{"id": 8, "x": 179, "y": 671, "name" : "Vermont Ave.", "image": "img/prop_cards/8_vermont_ave.png"},
-{"id": 9, "x": 121, "y": 671, "name" : "Connecticut Ave.", "image": "img/prop_cards/9_connecticut_ave.png"},
-{"id": 10, "x": 33, "y": 671, "name" : "LOS", "image": "test.png"},
-{"id": 11, "x": 33, "y": 579, "name" : "St. Charles Place", "image": "img/prop_cards/11_st_charles_place.png"},
-{"id": 12, "x": 33, "y": 522, "name" : "Electric Company", "image": "img/prop_cards/12_electric_comp.png"},
-{"id": 13, "x": 33, "y": 464, "name" : "States Ave.", "image": "img/prop_cards/13_states_ave.png"},
-{"id": 14, "x": 33, "y": 407, "name" : "Virginia Ave.", "image": "img/prop_cards/14_virginia_ave.png"},
-{"id": 15, "x": 33, "y": 350, "name" : "Pennsylvania Ave.", "image": "img/prop_cards/15_pennsylvania_r_r.png"},
-{"id": 16, "x": 33, "y": 293, "name" : "St. James Place", "image": "img/prop_cards/16_st_james_place.png"},
-{"id": 17, "x": 33, "y": 235, "name" : "LOS", "image": "test.png"},
-{"id": 18, "x": 33, "y": 178, "name" : "Tennesse Ave.", "image": "img/prop_cards/18_tennesse_ave.png"},
-{"id": 19, "x": 33, "y": 121, "name" : "New York Ave.", "image": "img/prop_cards/19_new_york_ave.png"},
-{"id": 20, "x": 33, "y": 33, "name" : "LOS", "image": "test.png"},
-{"id": 21, "x": 121, "y": 33, "name" : "Kentucky Ave.", "image": "img/prop_cards/21_kentucky_ave.png"},
-{"id": 22, "x": 179, "y": 33, "name" : "LOS", "image": "test.png"},
-{"id": 23, "x": 236, "y": 33, "name" : "Indiana Ave.", "image": "img/prop_cards/23_indiana_ave.png"},
-{"id": 24, "x": 293, "y": 33, "name" : "Illinois Ave.", "image": "img/prop_cards/24_illinois_ave.png"},
-{"id": 25, "x": 350, "y": 33, "name" : "B. O. R. R.", "image": "img/prop_cards/25_b_o_r_r.png"},
-{"id": 26, "x": 406, "y": 33, "name" : "Atlantic Ave.", "image": "img/prop_cards/26_atlantic_ave.png"},
-{"id": 27, "x": 465, "y": 33, "name" : "Ventor Ave.", "image": "img/prop_cards/27_ventnor_ave.png"},
-{"id": 28, "x": 522, "y": 33, "name" : "Water Works", "image": "img/prop_cards/28_water_works.png"},
-{"id": 29, "x": 579, "y": 33, "name" : "Marvin Gardens", "image": "img/prop_cards/29_marvin_gardens.png"},
-{"id": 30, "x": 669, "y": 33, "name" : "Pacific Ave.", "image": "img/prop_cards/31_pacific_ave.png"},
-{"id": 31, "x": 669, "y": 121, "name" : "North Carolina Ave.", "image": "img/prop_cards/32_no_carolina_ave.png"},
-{"id": 32, "x": 669, "y": 178, "name" : "LOS", "image": "test.png"},
-{"id": 33, "x": 669, "y": 235, "name" : "Pennsylvania Ave.", "image": "img/prop_cards/34_pennsylvania_ave.png"},
-{"id": 34, "x": 669, "y": 293, "name" : "Short Line R. R.", "image": "img/prop_cards/35_short_line_r_r.png"},
-{"id": 35, "x": 669, "y": 350, "name" : "LOS", "image": "test.png"},
-{"id": 36, "x": 669, "y": 407, "name" : "Park Place", "image": "img/prop_cards/37_park_place.png"},
-{"id": 37, "x": 669, "y": 464, "name" : "LOS", "image": "test.png"},
-{"id": 38, "x": 669, "y": 522, "name" : "Boardwalk", "image": "img/prop_cards/39_boardwalk.png"},
-{"id": 39, "x": 669, "y": 579, "name" : "LOS", "image": "test.png"}]
+[
+  {
+    "id": 0,
+    "x": 669,
+    "y": 671,
+    "name": "LOS",
+    "image": "test.png"
+  },
+  {
+    "id": 1,
+    "x": 579,
+    "y": 671,
+    "color" : "brown",
+    "parts": 2,
+    "name": "Mediterranean Ave.",
+    "image": "img/prop_cards/1_mediterranean_ave.png"
+  },
+  {
+    "id": 2,
+    "x": 522,
+    "y": 671,
+    "name": "LOS",
+    "image": "test.png"
+  },
+  {
+    "id": 3,
+    "x": 465,
+    "y": 671,
+    "color" : "brown",
+    "parts": 2,
+    "name": "Baltic Ave.",
+    "image": "img/prop_cards/3_baltic_ave.png"
+  },
+  {
+    "id": 4,
+    "x": 406,
+    "y": 671,
+    "name": "LOS",
+    "image": "test.png"
+  },
+  {
+    "id": 5,
+    "x": 350,
+    "y": 671,
+    "color" : "black",
+    "parts": 4,
+    "name": "Reading R. R.",
+    "image": "img/prop_cards/5_reading_r_r.png"
+  },
+  {
+    "id": 6,
+    "x": 293,
+    "y": 671,
+    "color" : "lightblue",
+    "parts": 3,
+    "name": "Oriental Ave.",
+    "image": "img/prop_cards/6_oriental_ave.png"
+  },
+  {
+    "id": 7,
+    "x": 236,
+    "y": 671,
+    "name": "LOS",
+    "image": "test.png"
+  },
+  {
+    "id": 8,
+    "x": 179,
+    "y": 671,
+    "color" : "lightblue",
+    "parts": 3,
+    "name": "Vermont Ave.",
+    "image": "img/prop_cards/8_vermont_ave.png"
+  },
+  {
+    "id": 9,
+    "x": 121,
+    "y": 671,
+    "color" : "lightblue",
+    "parts": 3,
+    "name": "Connecticut Ave.",
+    "image": "img/prop_cards/9_connecticut_ave.png"
+  },
+  {
+    "id": 10,
+    "x": 33,
+    "y": 671,
+    "name": "LOS",
+    "image": "test.png"
+  },
+  {
+    "id": 11,
+    "x": 33,
+    "y": 579,
+    "color" : "purple",
+    "parts": 3,
+    "name": "St. Charles Place",
+    "image": "img/prop_cards/11_st_charles_place.png"
+  },
+  {
+    "id": 12,
+    "x": 33,
+    "y": 522,
+    "color" : "white",
+    "parts": 2,
+    "name": "Electric Company",
+    "image": "img/prop_cards/12_electric_comp.png"
+  },
+  {
+    "id": 13,
+    "x": 33,
+    "y": 464,
+    "color" : "purple",
+    "parts": 3,
+    "name": "States Ave.",
+    "image": "img/prop_cards/13_states_ave.png"
+  },
+  {
+    "id": 14,
+    "x": 33,
+    "y": 407,
+    "color" : "purple",
+    "parts": 3,
+    "name": "Virginia Ave.",
+    "image": "img/prop_cards/14_virginia_ave.png"
+  },
+  {
+    "id": 15,
+    "x": 33,
+    "y": 350,
+    "color" : "black",
+    "parts": 4,
+    "name": "Pennsylvania R. R.",
+    "image": "img/prop_cards/15_pennsylvania_r_r.png"
+  },
+  {
+    "id": 16,
+    "x": 33,
+    "y": 293,
+    "color" : "orange",
+    "parts": 3,
+    "name": "St. James Place",
+    "image": "img/prop_cards/16_st_james_place.png"
+  },
+  {
+    "id": 17,
+    "x": 33,
+    "y": 235,
+    "name": "LOS",
+    "image": "test.png"
+  },
+  {
+    "id": 18,
+    "x": 33,
+    "y": 178,
+    "color" : "orange",
+    "parts": 3,
+    "name": "Tennesse Ave.",
+    "image": "img/prop_cards/18_tennesse_ave.png"
+  },
+  {
+    "id": 19,
+    "x": 33,
+    "y": 121,
+    "color" : "orange",
+    "parts": 3,
+    "name": "New York Ave.",
+    "image": "img/prop_cards/19_new_york_ave.png"
+  },
+  {
+    "id": 20,
+    "x": 33,
+    "y": 33,
+    "name": "LOS",
+    "image": "test.png"
+  },
+  {
+    "id": 21,
+    "x": 121,
+    "y": 33,
+    "color" : "red",
+    "parts": 3,
+    "name": "Kentucky Ave.",
+    "image": "img/prop_cards/21_kentucky_ave.png"
+  },
+  {
+    "id": 22,
+    "x": 179,
+    "y": 33,
+    "name": "LOS",
+    "image": "test.png"
+  },
+  {
+    "id": 23,
+    "x": 236,
+    "y": 33,
+    "color" : "red",
+    "parts": 3,
+    "name": "Indiana Ave.",
+    "image": "img/prop_cards/23_indiana_ave.png"
+  },
+  {
+    "id": 24,
+    "x": 293,
+    "y": 33,
+    "color" : "red",
+    "parts": 3,
+    "name": "Illinois Ave.",
+    "image": "img/prop_cards/24_illinois_ave.png"
+  },
+  {
+    "id": 25,
+    "x": 350,
+    "y": 33,
+    "color" : "black",
+    "parts": 4,
+    "name": "B. O. R. R.",
+    "image": "img/prop_cards/25_b_o_r_r.png"
+  },
+  {
+    "id": 26,
+    "x": 406,
+    "y": 33,
+    "color" : "yellow",
+    "parts": 3,
+    "name": "Atlantic Ave.",
+    "image": "img/prop_cards/26_atlantic_ave.png"
+  },
+  {
+    "id": 27,
+    "x": 465,
+    "y": 33,
+    "color" : "yellow",
+    "parts": 3,
+    "name": "Ventor Ave.",
+    "image": "img/prop_cards/27_ventnor_ave.png"
+  },
+  {
+    "id": 28,
+    "x": 522,
+    "y": 33,
+    "color" : "white",
+    "parts": 2,
+    "name": "Water Works",
+    "image": "img/prop_cards/28_water_works.png"
+  },
+  {
+    "id": 29,
+    "x": 579,
+    "y": 33,
+    "color" : "yellow",
+    "parts": 3,
+    "name": "Marvin Gardens",
+    "image": "img/prop_cards/29_marvin_gardens.png"
+  },
+  {
+    "id": 30,
+    "x": 669,
+    "y": 33,
+    "name": "Go To Jail",
+    "image": "test.png"
+  },
+  {
+    "id": 31,
+    "x": 669,
+    "y": 33,
+    "color" : "green",
+    "parts": 3,
+    "name": "Pacific Ave.",
+    "image": "img/prop_cards/31_pacific_ave.png"
+  },
+  {
+    "id": 32,
+    "x": 669,
+    "y": 121,
+    "color" : "green",
+    "parts": 3,
+    "name": "North Carolina Ave.",
+    "image": "img/prop_cards/32_no_carolina_ave.png"
+  },
+  {
+    "id": 33,
+    "x": 669,
+    "y": 178,
+    "name": "LOS",
+    "image": "test.png"
+  },
+  {
+    "id": 34,
+    "x": 669,
+    "y": 235,
+    "color" : "green",
+    "parts": 3,
+    "name": "Pennsylvania Ave.",
+    "image": "img/prop_cards/34_pennsylvania_ave.png"
+  },
+  {
+    "id": 35,
+    "x": 669,
+    "y": 293,
+    "color" : "black",
+    "parts": 4,
+    "name": "Short Line R. R.",
+    "image": "img/prop_cards/35_short_line_r_r.png"
+  },
+  {
+    "id": 36,
+    "x": 669,
+    "y": 350,
+    "name": "LOS",
+    "image": "test.png"
+  },
+  {
+    "id": 37,
+    "x": 669,
+    "y": 407,
+    "color" : "blue",
+    "parts": 2,
+    "name": "Park Place",
+    "image": "img/prop_cards/37_park_place.png"
+  },
+  {
+    "id": 38,
+    "x": 669,
+    "y": 464,
+    "name": "LOS",
+    "image": "test.png"
+  },
+  {
+    "id": 39,
+    "x": 669,
+    "y": 522,
+    "color" : "blue",
+    "parts": 2,
+    "name": "Boardwalk",
+    "image": "img/prop_cards/39_boardwalk.png"
+  }
+]
