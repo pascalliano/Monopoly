@@ -1,10 +1,10 @@
-import ast
 import random
 import socket
 import threading
 import time
 from tkinter import *
 import json
+
 
 class Server:
 
@@ -103,7 +103,6 @@ class Spieler(Client):
 
 class Master:
 
-
     def __init__(self):
         self.main = Tk()
         self.main.title("Monopoly")
@@ -112,7 +111,11 @@ class Master:
 
         with open("propData.json", "r") as f:
             dataStr = "".join([x for x in f.readlines()])
+        with open("propPrices.json", "r") as f:
+            priceStr = "".join([x for x in f.readlines()])
+
         self.propData = json.loads(dataStr)
+        self.propPrices = json.loads(priceStr)
         for i in self.propData:
             i["PhotoImage"] = PhotoImage(file=i["image"])
 
@@ -120,7 +123,7 @@ class Master:
         self.bg_label = Label(self.main, image=self.bg_image)
         self.bg_label.place(x=0, y=0, relheight=1, relwidth=1)
 
-        self.showPropCard(random.randint(0,40))
+        self.showPropCard(random.randint(0, 40))
 
     def newGame(self, spieler):
         self.alleSpielerNamen = [x for x in spieler]
@@ -138,12 +141,13 @@ class Master:
 
         tl = Toplevel()
         tl.geometry("250x300")
-        tl.resizable(0,0)
+        tl.resizable(0, 0)
 
-        tlCard = Label(tl, image = self.propData[pos]["PhotoImage"])
-        tlCard.place(x = 0, y = 0, relheight = 1, relwidth = 1)
+        tlCard = Label(tl, image=self.propData[pos]["PhotoImage"])
+        tlCard.place(x=0, y=0, relheight=1, relwidth=1)
 
-        tl.mainloop()
+        #tl.mainloop()
+
 
 class Launcher:
 
@@ -168,7 +172,7 @@ class Launcher:
                 try:
                     maxPlayer = int(input("Spieleranzahl (2-8): "))
                 except:
-                    print("Ungültige Eingabe")
+                    maxPlayer = 10
                 finally:
                     if maxPlayer not in range(2, 9):
                         print("Ungültige Eingabe")
@@ -201,7 +205,4 @@ class Launcher:
 
 
 if __name__ == "__main__":
-
-
-
     l = Launcher()
